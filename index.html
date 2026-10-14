@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="A special 19th birthday surprise for Aakriti Adhikari."
+  />
+
+  <title>Happy 19th Birthday, Aakriti ❤️</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"],
+            playfair: ["Playfair Display", "serif"],
+            caveat: ["Caveat", "cursive"],
+            vibes: ["Great Vibes", "cursive"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =========================================
+       GLOBAL BACKGROUND
+  ========================================== -->
+
+  <div class="site-background">
+
+    <div class="background-photo"></div>
+
+    <div class="background-overlay"></div>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+  </div>
+
+
+  <!-- =========================================
+       STARS
+  ========================================== -->
+
+  <div
+    id="stars"
+    class="stars"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- =========================================
+       FLOATING PARTICLES
+  ========================================== -->
+
+  <div
+    id="floatingParticles"
+    aria-hidden="true"
+  ></div>
+
+
+  <!-- =========================================
+       OPENING SCREEN
+  ========================================== -->
+
+  <section
+    id="opening"
+    class="opening-screen"
+    aria-label="Birthday surprise"
+  >
+
+    <!-- Background image specifically for opening -->
+
+    <div class="opening-image"></div>
+
+    <div class="opening-overlay"></div>
+
+
+    <div class="opening-content">
+
+      <div class="opening-small-text">
+        A little surprise for
+      </div>
+
+
+      <!-- FIXED NAME -->
+      <h1 class="opening-name">
+        Aakriti
+      </h1>
+
+
+      <p class="opening-description">
+        Someone special has prepared something beautiful
+        just for you.
+      </p>
+
+
+      <!-- Gift -->
+
+      <button
+        id="giftBox"
+        class="gift-box"
+        aria-label="Open birthday surprise"
+      >
+
+        <span class="gift-bow"></span>
+
+        <span class="gift-lid"></span>
+
+        <span class="gift-body"></span>
+
+        <span class="gift-ribbon vertical"></span>
+
+        <span class="gift-ribbon horizontal"></span>
+
+      </button>
+
+
+      <button
+        id="openButton"
+        class="magic-button"
+      >
+        <span>✨</span>
+        Open Your Surprise
+        <span>✨</span>
+      </button>
+
+
+      <p class="opening-hint">
+        Tap the gift or button
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================
+       MAIN WEBSITE
+  ========================================== -->
+
+  <main
+    id="mainContent"
+    class="main-content"
+  >
+
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+    <!-- =========================================
+         CAKE
+    ========================================== -->
+
+    <section
+      id="cake"
+      class="section cake-section"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-heading reveal">
+
+          <span class="eyebrow">
+            Make a wish
+          </span>
+
+          <h2>
+            Your Birthday
+            <span>Cake</span>
+            🎂
+          </h2>
+
+          <p>
+            Make a wish and blow out all 19 candles.
+          </p>
+
+        </div>
+
+
+        <div
+          class="cake-card glass-card reveal"
+        >
+
+
+          <div class="cake-stage">
+
+            <!-- Candles -->
+
+            <div
+              id="candles"
+              class="candles"
+            ></div>
+
+
+            <!-- Cake -->
+
+            <div class="cake">
+
+              <div class="cake-top"></div>
+
+              <div class="cake-cream">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+              </div>
+
+              <div class="cake-middle"></div>
+
+              <div class="cake-bottom"></div>
+
+              <div class="cake-plate"></div>
+
+            </div>
+
+
+            <!-- Cake number -->
+
+            <div class="cake-number">
+              19
+            </div>
+
+          </div>
+
+
+          <button
+            id="blowButton"
+            class="magic-button cake-button"
+          >
+            🎂 Blow Out the Candles
+          </button>
+
+
+          <p
+            id="cakeMessage"
+            class="cake-message"
+            aria-live="polite"
+          ></p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section
+      id="hero"
+      class="hero-section"
+    >
+
+      <!-- Hero image -->
+
+      <div class="hero-background">
+
+        <img
+          src="images/birthday_image.jpg"
+          alt=""
+          class="hero-photo"
+        />
+
+        <div class="hero-photo-overlay"></div>
+
+      </div>
+
+
+      <div class="hero-content">
+
+        <div class="hero-badge reveal">
+
+          <span class="badge-heart">
+            ♥
+          </span>
+
+          <span>
+            A special day for a special person
+          </span>
+
+        </div>
+
+
+        <p class="hero-intro reveal">
+          Today is not just another day...
+        </p>
+
+
+        <!-- Main heading -->
+
+        <div class="hero-title-wrapper reveal">
+
+          <h2 class="hero-title">
+            Happy Birthday
+          </h2>
+
+          <h3 class="hero-name">
+            Aakriti
+          </h3>
+
+        </div>
+
+
+        <!-- Age -->
+
+        <div class="age-badge reveal">
+
+          <div class="age-icon">
+            🎂
+          </div>
+
+          <div>
+
+            <span class="age-label">
+              Chapter
+            </span>
+
+            <strong>
+              19
+            </strong>
+
+          </div>
+
+          <span class="age-sparkle">
+            ✨
+          </span>
+
+        </div>
+
+
+        <p class="hero-description reveal">
+
+          Here's to another beautiful chapter of your life —
+          filled with happiness, beautiful memories,
+          big dreams, unexpected adventures,
+          and countless reasons to smile.
+
+        </p>
+
+
+        <a
+          href="#message"
+          class="scroll-down reveal"
+        >
+
+          <span>
+            Discover your surprise
+          </span>
+
+          <span class="scroll-arrow">
+            ↓
+          </span>
+
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         BIRTHDAY MESSAGE
+    ========================================== -->
+
+    <section
+      id="message"
+      class="section message-section"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-heading reveal">
+
+          <span class="eyebrow">
+            A little message
+          </span>
+
+          <h2>
+            For
+            <span>Aakriti</span>
+            <span class="heading-heart">♥</span>
+          </h2>
+
+        </div>
+
+
+        <div
+          class="message-card glass-card reveal"
+        >
+
+          <div class="message-decoration decoration-one">
+            ✦
+          </div>
+
+          <div class="message-decoration decoration-two">
+            ♡
+          </div>
+
+
+          <div class="message-content">
+
+            <p
+              id="typingMessage"
+              class="birthday-message"
+            ></p>
+
+
+            <div class="message-divider">
+              <span></span>
+              ♥
+              <span></span>
+            </div>
+
+
+            <p class="message-footer">
+              May your 19th year be unforgettable.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         19 WISHES
+    ========================================== -->
+
+    <section
+      id="wishes"
+      class="section wishes-section"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-heading reveal">
+
+          <span class="eyebrow">
+            19 little wishes
+          </span>
+
+          <h2>
+            For Your
+            <span>19th Year</span>
+            <span class="heading-sparkle">✦</span>
+          </h2>
+
+          <p>
+            Tap each card to discover a little wish.
+          </p>
+
+        </div>
+
+
+        <div
+          id="wishGrid"
+          class="wish-grid"
+        ></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MEMORIES
+    ========================================== -->
+
+    <section
+      id="memories"
+      class="section memories-section"
+    >
+
+      <div class="section-container">
+
+
+        <div class="section-heading reveal">
+
+          <span class="eyebrow">
+            Beautiful memories
+          </span>
+
+          <h2>
+            Little
+            <span>Moments</span>
+            📸
+          </h2>
+
+          <p>
+            A few beautiful moments worth remembering.
+          </p>
+
+        </div>
+
+
+        <div class="memory-grid">
+
+
+          <!-- IMAGE 1 -->
+
+          <button
+            class="memory-card glass-card reveal"
+            data-image="images/image1.jpg"
+            data-alt="Aakriti's beautiful memory"
+          >
+
+            <img
+              src="images/image1.jpg"
+              alt="Aakriti's beautiful memory"
+              loading="lazy"
+            />
+
+            <span class="memory-overlay">
+
+              <span class="memory-icon">
+                ⌕
+              </span>
+
+              <span>
+                View memory
+              </span>
+
+            </span>
+
+          </button>
+
+
+          <!-- IMAGE 2 -->
+
+          <button
+            class="memory-card glass-card reveal"
+            data-image="images/image2.jpg"
+            data-alt="Aakriti's special memory"
+          >
+
+            <img
+              src="images/image2.jpg"
+              alt="Aakriti's special memory"
+              loading="lazy"
+            />
+
+            <span class="memory-overlay">
+
+              <span class="memory-icon">
+                ⌕
+              </span>
+
+              <span>
+                View memory
+              </span>
+
+            </span>
+
+          </button>
+
+
+          <!-- IMAGE 3 -->
+
+          <button
+            class="memory-card glass-card reveal"
+            data-image="images/image3.jpg"
+            data-alt="Aakriti's happy memory"
+          >
+
+            <img
+              src="images/image3.jpg"
+              alt="Aakriti's happy memory"
+              loading="lazy"
+            />
+
+            <span class="memory-overlay">
+
+              <span class="memory-icon">
+                ⌕
+              </span>
+
+              <span>
+                View memory
+              </span>
+
+            </span>
+
+          </button>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    
+
+    <!-- =========================================
+         FINAL MESSAGE
+    ========================================== -->
+
+    <section
+      id="final"
+      class="final-section"
+    >
+
+      <div class="final-background">
+        <div class="final-glow"></div>
+      </div>
+
+
+      <div class="final-content">
+
+
+        <div class="final-heart heartbeat reveal">
+          ♥
+        </div>
+
+
+        <p class="final-eyebrow reveal">
+          And finally...
+        </p>
+
+
+        <h2 class="final-title reveal">
+          Happy 19th
+        </h2>
+
+
+        <h3 class="final-name reveal">
+          Aakriti
+        </h3>
+
+
+        <div
+          class="final-card glass-card reveal"
+        >
+
+          <p>
+
+            May you always have a reason to smile,
+            someone to make you laugh,
+            courage to chase your dreams,
+            and beautiful memories to look back on.
+
+          </p>
+
+
+          <div class="final-line"></div>
+
+
+          <p>
+
+            Keep shining.
+            Keep smiling.
+            Keep being you.
+
+          </p>
+
+
+          <div class="final-emojis">
+            🎂 ✨ 🌸 💗 🦋 ✨ 🎂
+          </div>
+
+        </div>
+
+
+        <button
+          id="celebrateButton"
+          class="magic-button celebrate-button reveal"
+        >
+          🎉 Celebrate Again
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+
+      <p>
+        Made with
+        <span>♥</span>
+        for Aakriti
+      </p>
+
+      <small>
+        Chapter 19 · A beautiful new beginning ✨
+      </small>
+
+    </footer>
+
+
+  </main>
+
+
+  <!-- =========================================
+       IMAGE LIGHTBOX
+  ========================================== -->
+
+  <div
+    id="lightbox"
+    class="lightbox"
+    aria-hidden="true"
+  >
+
+    <button
+      id="closeLightbox"
+      class="lightbox-close"
+      aria-label="Close image"
+    >
+      ×
+    </button>
+
+
+    <img
+      id="lightboxImage"
+      src=""
+      alt=""
+    />
+
+  </div>
+
+
+  <!-- =========================================
+       BACK TO TOP
+  ========================================== -->
+
+  <button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+
+
+  <!-- =========================================
+       JAVASCRIPT
+  ========================================== -->
+
+  <script src="javascript.js"></script>
+
+</body>
+</html>
